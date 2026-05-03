@@ -24,3 +24,31 @@ https://grouplens.org/datasets/movielens/
 - movies.csv → movieId, title, genres
 - ratings.csv → userId, movieId, rating, timestamp
 - tags.csv → userId, movieId, tag
+
+
+ #  movie-recommendation-system/
+│
+├── data/
+│   ├── movies.csv
+│   ├── ratings.csv
+│
+├── notebooks/
+│   └── eda.ipynb
+│
+├── src/
+│   ├── data_preprocessing.py
+│   ├── feature_engineering.py
+│   ├── model.py
+│   ├── recommend.py
+│
+├── models/
+│   └── similarity.pkl
+│
+├── outputs/
+│   └── recommendations.csv
+│
+├── app.py
+├── main.py
+├── requirements.txt
+├── README.md
+
