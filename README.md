@@ -26,7 +26,7 @@ https://grouplens.org/datasets/movielens/
 - tags.csv → userId, movieId, tag
 
 # 🧹 4. Data Preprocessing (src/data_preprocessing.py)
-
+```
 import pandas as pd
 
 def load_data():
@@ -42,4 +42,4 @@ def preprocess(movies, ratings):
     df.dropna(inplace=True)
 
     return df
-
+```
