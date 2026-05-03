@@ -25,31 +25,21 @@ https://grouplens.org/datasets/movielens/
 - ratings.csv → userId, movieId, rating, timestamp
 - tags.csv → userId, movieId, tag
 
-,,,
- movie-recommendation-system/
-│
-├── data/
-│   ├── movies.csv
-│   ├── ratings.csv
-│
-├── notebooks/
-│   └── eda.ipynb
-│
-├── src/
-│   ├── data_preprocessing.py
-│   ├── feature_engineering.py
-│   ├── model.py
-│   ├── recommend.py
-│
-├── models/
-│   └── similarity.pkl
-│
-├── outputs/
-│   └── recommendations.csv
-│
-├── app.py
-├── main.py
-├── requirements.txt
-├── README.md
-,,,
+# 🧹 4. Data Preprocessing (src/data_preprocessing.py)
+
+import pandas as pd
+
+def load_data():
+    movies = pd.read_csv("data/movies.csv")
+    ratings = pd.read_csv("data/ratings.csv")
+    return movies, ratings
+
+def preprocess(movies, ratings):
+    # merge
+    df = ratings.merge(movies, on="movieId")
+
+    # drop nulls
+    df.dropna(inplace=True)
+
+    return df
 
