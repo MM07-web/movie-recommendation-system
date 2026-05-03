@@ -25,6 +25,36 @@ https://grouplens.org/datasets/movielens/
 - ratings.csv → userId, movieId, rating, timestamp
 - tags.csv → userId, movieId, tag
 
+  # 📁 3. Project Structure
+```
+movie-recommendation-system/
+│
+├── data/
+│   ├── movies.csv
+│   ├── ratings.csv
+│
+├── notebooks/
+│   └── eda.ipynb
+│
+├── src/
+│   ├── data_preprocessing.py
+│   ├── feature_engineering.py
+│   ├── model.py
+│   ├── recommend.py
+│
+├── models/
+│   └── similarity.pkl
+│
+├── outputs/
+│   └── recommendations.csv
+│
+├── app.py
+├── main.py
+├── requirements.txt
+├── README.md
+ ```
+
+
 # 🧹 4. Data Preprocessing (src/data_preprocessing.py)
 ```
 import pandas as pd
@@ -192,8 +222,8 @@ flask
 joblib
 ```
 
-# 📘 14. README.md (SHORT VERSION)
-```
+
+
 # 🎬 Movie Recommendation System
 
 ## Overview
@@ -222,33 +252,5 @@ Streaming platforms like Netflix, Amazon Prime
 ## Future Roadmap
 - Add deep learning (Neural CF)
 - Add user interface
-```
 
-# 📁 3. Project Structure
-```
-movie-recommendation-system/
-│
-├── data/
-│   ├── movies.csv
-│   ├── ratings.csv
-│
-├── notebooks/
-│   └── eda.ipynb
-│
-├── src/
-│   ├── data_preprocessing.py
-│   ├── feature_engineering.py
-│   ├── model.py
-│   ├── recommend.py
-│
-├── models/
-│   └── similarity.pkl
-│
-├── outputs/
-│   └── recommendations.csv
-│
-├── app.py
-├── main.py
-├── requirements.txt
-├── README.md
- ```
+
