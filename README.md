@@ -26,7 +26,7 @@ https://grouplens.org/datasets/movielens/
 - tags.csv → userId, movieId, tag
 
 ,,,
- #  movie-recommendation-system/
+ movie-recommendation-system/
 │
 ├── data/
 │   ├── movies.csv
