@@ -1,4 +1,7 @@
 # movie-recommendation-system
+[![python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://python.org)
+
+
 # 🎯 1. Problem Definition 
 **Business Problem:** 
 Streaming platforms need to recommend relevant movies to users to increase:  
